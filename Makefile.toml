@@ -1,0 +1,15 @@
+[tasks.login]
+script = [
+	"docker run -it -v $(pwd):/home yobibook"
+]
+
+[tasks.mybuild]
+script = [
+	"g++ -std=c++14 -c main.cpp"
+]
+
+[tasks.myobjdump]
+script = [
+	"objdump -D -M intel main.o"
+]
+
